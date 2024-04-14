@@ -12,15 +12,17 @@ The Laser Tripwire System is an IoT project designed to create a security perime
 - Breadboard
 - Jumper wires
 
+## Circuit Diagram
+![Circuit Diagram](https://link.to.your/circuit-diagram.png)
+
 ## How It Works
 1. **Setup**: Connect the components as follows:
    - Connect the positive (longer) leg of the LED to pin 7 on the Arduino through a current-limiting resistor. Connect the negative (shorter) leg to the ground.
    - Connect the positive terminal of the buzzer to pin 8 on the Arduino and the negative terminal to the ground.
-   - Connect one end of the laser module to the 5V pin on the Arduino and the other end to a digital pin.
    - Connect the LDR sensor to pin A0 on the Arduino.
    - Place the components on the breadboard and ensure all connections are secure.
    
-2. **Code**: Upload the Arduino sketch provided (`tripwire_system.ino`) to the Arduino Uno. This sketch includes the necessary logic to monitor the status of the laser beam and control the buzzer and LED accordingly.
+2. **Code**: Upload the Arduino sketch provided (`laserTripWireSystem.ino`) to the Arduino Uno. This sketch includes the necessary logic to monitor the status of the laser beam and control the buzzer and LED accordingly.
 
 3. **Operation**:
    - When the laser beam is unobstructed, the LDR sensor detects high light intensity, indicating the normal state.
@@ -28,7 +30,8 @@ The Laser Tripwire System is an IoT project designed to create a security perime
    - The Arduino detects this change and triggers the buzzer to sound the alarm.
    - Simultaneously, the red LED lights up to visually indicate the breach.
    - The system continues to monitor the status of the laser beam, resetting once the beam is no longer obstructed.
-   
+   ## Demonstration Video
+[![Demonstration Video](https://link.to.your/demo-video-thumbnail.png)](https://link.to.your/demo-video)
 4. **Deployment**:
    - Install the laser module at desired locations to create a perimeter.
    - Place the LDR sensor opposite the laser module to detect interruptions in the laser beam effectively.
@@ -42,9 +45,3 @@ The Laser Tripwire System is an IoT project designed to create a security perime
    - Add a GSM module for SMS notifications.
    - Incorporate a microSD card module for logging breach events.
    - Explore options for power efficiency to extend battery life for portable deployments.
-
-## Contributors
-- [Your Name or Username] - [Your Contact Information]
-
-## License
-This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
