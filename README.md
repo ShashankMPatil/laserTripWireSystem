@@ -12,9 +12,6 @@ The Laser Tripwire System is an IoT project designed to create a security perime
 - Breadboard
 - Jumper wires
 
-## Circuit Diagram
-![Circuit Diagram](https://link.to.your/circuit-diagram.png)
-
 ## How It Works
 1. **Setup**: Connect the components as follows:
    - Connect the positive (longer) leg of the LED to pin 7 on the Arduino through a current-limiting resistor. Connect the negative (shorter) leg to the ground.
@@ -30,8 +27,7 @@ The Laser Tripwire System is an IoT project designed to create a security perime
    - The Arduino detects this change and triggers the buzzer to sound the alarm.
    - Simultaneously, the red LED lights up to visually indicate the breach.
    - The system continues to monitor the status of the laser beam, resetting once the beam is no longer obstructed.
-   ## Demonstration Video
-[![Demonstration Video](https://link.to.your/demo-video-thumbnail.png)](https://link.to.your/demo-video)
+
 4. **Deployment**:
    - Install the laser module at desired locations to create a perimeter.
    - Place the LDR sensor opposite the laser module to detect interruptions in the laser beam effectively.
